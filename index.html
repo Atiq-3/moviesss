@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #div{
+        height: 100px;
+        width: 100%;
+        background-color: aquamarine;
+      }
+    </style>
+</head>
+<body> 
+    <button onclick="movieFiles('horror')">Horror movie</button>
+    <button onclick="movieFiles('action')">Action movie</button>
+    <button onclick="movieFiles('thriller')">thriller movie</button>
+
+    <div id="div"></div>
+<script>
+     let data = [
+            {
+                movieName: "bahulbali",
+                actor: "Prabhas",
+                actress: "Anushka shetty",
+                category: "action"
+            },
+            {
+                movieName: "bahulbali2",
+                actor: "Prabhas",
+                actress: "Anushka shetty",
+                category: "action"
+            },
+            {
+                movieName: "Tumbhad",
+                actor: "Shah",
+                actress: "Amma",
+                category: "thriller"
+            },
+            {
+                movieName: "kantaara",
+                actor: "Aakash",
+                actress: "Aakashi",
+                category: "horror"
+            },
+            {
+                movieName: "fastx",
+                actor: "Harsh",
+                actress: "Harsha",
+                category: "action"
+            },
+            {
+                movieName: "The Conjuring",
+                actor: "Patrick Wilson",
+                actress: "Vera Farmiga",
+                category: "horror"
+            },
+            {
+                movieName: "Inception",
+                actor: "Leonardo DiCaprio",
+                actress: "Marion Cotillard",
+                category: "thriller"
+            },
+            {
+                movieName: "Joker",
+                actor: "Joaquin Phoenix",
+                actress: "Zazie Beetz",
+                category: "thriller"
+            },
+            {
+                movieName: "The Sixth Sense",
+                actor: "Bruce Willis",
+                actress: "Toni Collette",
+                category: "thriller"
+            },
+            {
+                movieName: "Se7en",
+                actor: "Brad Pitt",
+                actress: "Gwyneth Paltrow",
+                category: "thriller"
+            },
+            {
+                movieName: "13 Exorcisms",
+                actor: "Urko Olazabal",
+                actress: "María Romanillos",
+                category: "horror"
+            }
+        ]
+      
+      function movieFiles(category){
+       
+        let result= data.filter((val)=>{
+            if(category==category){
+                return movieName
+            }
+            })
+            console.log(result)
+      }
+
+      function movieFiles(category){
+       
+       let result= data.filter((category)=>{
+           if(category==category){
+               return val.movieName
+           }
+           })
+           console.log(result)
+     }
+
+     function movieFiles(category){
+       
+       let result= data.filter((val)=>{
+           if(val.category==category){
+               return val.movieName
+           }
+           })
+           console.log(result)
+     }
+    
+
+    
+</script>
+</body>
+</html>
